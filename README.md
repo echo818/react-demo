@@ -13,9 +13,9 @@
 
 npm install -g serve
 
-2. 启动api接口数据(8080端口)
+2. 启动api接口数据(默认5000端口)
 
-serve api --port=8080
+serve api
 
 ## create-react-app 支持less编译
 
@@ -24,6 +24,18 @@ serve api --port=8080
 ## 打包文件中的hash值改为数字时间格式
 
 ### [create-react-app 脚手架打包hash值改为时间字符串格式](http://blog.csdn.net/echo008/article/details/78312408)
+
+## 二级目录部署
+
+1. build文件夹下的新建app目录,将build下打包的文件都放入app文件夹中
+
+2. serve 启动静态资源(8080端口)
+
+serve build --port=8080
+
+3. 访问生产环境资源
+
+http://localhost:8080/app/
 
 ## 工程架构
 
